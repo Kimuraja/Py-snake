@@ -18,7 +18,7 @@ class Snake:
     def create_snake(self):
         for position in start:
             new_seg = Turtle("square")
-            new_seg.color('white')
+            new_seg.color('#2d3142')
             new_seg.pu()
             new_seg.goto(position)
             self.segment.append(new_seg)

@@ -4,7 +4,7 @@ import time
 
 s = Screen()
 s.setup(width=600, height=600)
-s.bgcolor('black')
+s.bgcolor('#ffffff')
 s.title("Snake")
 s.tracer(0)
 
