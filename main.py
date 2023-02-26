@@ -24,7 +24,7 @@ s.onkey(snake.right, "Right")
 is_on = True
 while is_on:
     s.update()
-    time.sleep(0.05)
+    time.sleep(0.07)
     snake.move()
     score.update_scoreboard()
 
@@ -34,11 +34,11 @@ while is_on:
         snake.extend()
 
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
-        is_on = False
-        score.game_over()
+        snake.reset()
+        score.reset()
 
     for segment in snake.segment[1:]:
         if snake.head.distance(segment) < 10:
-            is_on = False
-            score.game_over()
+            snake.reset()
+            score.reset()
 s.exitonclick()
