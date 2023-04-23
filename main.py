@@ -20,6 +20,11 @@ s.onkey(snake.down, "Down")
 s.onkey(snake.left, "Left")
 s.onkey(snake.right, "Right")
 
+s.onkey(snake.up, "w")
+s.onkey(snake.down, "s")
+s.onkey(snake.left, "a")
+s.onkey(snake.right, "d")
+
 
 is_on = True
 while is_on:
